@@ -322,6 +322,7 @@ All prizes are paid out directly to participants on [SuperTeam](https://supertea
 - **Submissions that do not compile, and do not meet the specified requirements, will not be considered**
 - **Deadline is: 9 July 2025, 12.01 PM**
 - **Announcement will be announced about one week later, stay tuned for our socials for exact date**
+- **Finalize your submission at [SuperTeam](https://earn.superteam.fun/agent-challenge)**
 
 ### Don’t Miss Nosana Builder Challenge Updates
 
