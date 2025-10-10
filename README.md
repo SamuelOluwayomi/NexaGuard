@@ -1,7 +1,3 @@
-# NexaGuard
-
-# Nosana Builders Challenge: Agent-101
-
 # Nosana and AI Builders Presents: BUIDL DAY @ TOKEN2049 🚀
 
 ![Agent](./assets/NosanaBuildersChallenge03.jpg)
@@ -17,6 +13,7 @@ Build and deploy intelligent AI agents using the **Mastra framework** on the **N
 ### What You'll Build
 
 Create an AI agent that performs real-world tasks using:
+
 - **Mastra framework** for agent orchestration
 - **Tool calling** to interact with external services
 - **MCP (Model Context Protocol)** for enhanced capabilities
@@ -44,7 +41,7 @@ This is a starter template for building AI agents using [Mastra](https://mastra.
 
 ## Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - Any of the following package managers:
   - pnpm (recommended)
   - npm
@@ -104,6 +101,7 @@ ollama serve
 ```
 
 Edit your `.env`:
+
 ```env
 OLLAMA_API_URL=http://127.0.0.1:11434/api
 MODEL_NAME_AT_ENDPOINT=qwen3:0.6b
@@ -137,20 +135,22 @@ pnpm run dev:agent   # Start Mastra agent server (port 4111)
 Open <http://localhost:3000> to see your agent in action in the frontend.
 Open <http://localhost:4111> to open up the Mastra Agent Playground.
 
-
 ## 🏗️ Implementation Timeline
 
 **Important Dates:**
+
 - Start Challenge: 10 October
 - Submission Deadline: 24 October
 - Winners Announced: 31 October
 
 ### Phase 1: Development
+
 1. **Setup** : Fork repo, install dependencies, choose template
 2. **Build** : Implement your tool functions and agent logic
 3. **Test** : Validate functionality at http://localhost:3000
 
 ### Phase 2: Containerization
+
 1. **Clean up**: Remove unused agents from `src/mastra/index.ts`
 2. **Build**: Create Docker container using the provided `Dockerfile`
 3. **Test locally**: Verify container works correctly
@@ -160,7 +160,7 @@ Open <http://localhost:4111> to open up the Mastra Agent Playground.
 docker build -t yourusername/agent-challenge:latest .
 
 # Test locally first
-docker run -p 3000:3000 yourusername/agent-challenge:latest 
+docker run -p 3000:3000 yourusername/agent-challenge:latest
 
 # Push to Docker Hub
 docker login
@@ -168,6 +168,7 @@ docker push yourusername/agent-challenge:latest
 ```
 
 ### Phase 3: Deployment to Nosana
+
 1. **Deploy your complete stack**: The provided `Dockerfile` will deploy:
    - Your Mastra agent
    - Your frontend interface
@@ -178,6 +179,7 @@ docker push yourusername/agent-challenge:latest
 ### Phase 4: Video Demo
 
 Record a 1-3 minute video demonstrating:
+
 - Your agent **running on Nosana** (show the deployed version!)
 - Key features and functionality
 - The frontend interface in action
@@ -187,6 +189,7 @@ Record a 1-3 minute video demonstrating:
 ### Phase 5: Documentation
 
 Update this README with:
+
 - Agent description and purpose
 - What tools/APIs your agent uses
 - Setup instructions
@@ -223,12 +226,10 @@ Your submission **must** include:
    - Add a link to your social media post
    - Submissions that do not meet all requirements will not be considered
 
-
-
 ## 🚀 Deploying to Nosana
 
-
 ### Using Nosana Dashboard
+
 1. Open [Nosana Dashboard](https://dashboard.nosana.com/deploy)
 2. Click `Expand` to open the job definition editor
 3. Edit `nos_job_def/nosana_mastra.json` with your Docker image:
@@ -242,6 +243,7 @@ Your submission **must** include:
 6. Click `Deploy`
 
 ### Using Nosana CLI (Alternative)
+
 ```bash
 npm install -g @nosana/cli
 nosana job post --file ./nos_job_def/nosana_mastra.json --market nvidia-3090 --timeout 30
@@ -252,23 +254,27 @@ nosana job post --file ./nos_job_def/nosana_mastra.json --market nvidia-3090 --t
 Submissions evaluated on 4 key areas (25% each):
 
 ### 1. Innovation 🎨
+
 - Originality of agent concept
 - Creative use of AI capabilities
 - Unique problem-solving approach
 
 ### 2. Technical Implementation 💻
+
 - Code quality and organization
 - Proper use of Mastra framework
 - Efficient tool implementation
 - Error handling and robustness
 
 ### 3. Nosana Integration ⚡
+
 - Successful deployment on Nosana
 - Resource efficiency
 - Stability and performance
 - Proper containerization
 
 ### 4. Real-World Impact 🌍
+
 - Practical use cases
 - Potential for adoption
 - Clear value proposition
@@ -277,6 +283,7 @@ Submissions evaluated on 4 key areas (25% each):
 ## 🎁 Prizes
 
 **Top 10 submissions will be rewarded:**
+
 - 🥇 1st Place: $1,000 USDC
 - 🥈 2nd Place: $750 USDC
 - 🥉 3rd Place: $450 USDC
@@ -298,6 +305,7 @@ For more information, check out the following resources:
 - [Mastra Tool Calling Documentation](https://mastra.ai/en/docs/agents/tools)
 
 ### Documentation Links
+
 - [Nosana Documentation](https://docs.nosana.io)
 - [Mastra Documentation](https://mastra.ai/docs)
 - [Docker Documentation](https://docs.docker.com)
@@ -306,7 +314,8 @@ For more information, check out the following resources:
 ## 🆘 Support & Community
 
 ### Get Help
-- **Discord**: Join [Nosana Discord](https://nosana.com/discord) 
+
+- **Discord**: Join [Nosana Discord](https://nosana.com/discord)
 - **Dedicated Channel**: [Builders Challenge Dev Chat](https://discord.com/channels/236263424676331521/1354391113028337664)
 - **Twitter**: Follow [@nosana_ai](https://x.com/nosana_ai) for live updates
 
@@ -320,5 +329,3 @@ For more information, check out the following resources:
 Good luck, builders! We can't wait to see the innovative AI agents you create for the Nosana ecosystem.
 
 **Happy Building!** 🚀
-
-
