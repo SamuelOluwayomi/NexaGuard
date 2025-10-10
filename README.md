@@ -330,3 +330,19 @@ For more information, check out the following resources:
 Good luck, builders! We can't wait to see the innovative AI agents you create for the Nosana ecosystem.
 
 **Happy Building!** 🚀
+
+## Stay in the Loop
+
+Want access to exclusive builder perks, early challenges, and Nosana credits?
+Subscribe to our newsletter and never miss an update.
+
+👉 [ Join the Nosana Builders Newsletter ](https://e86f0b9c.sibforms.com/serve/MUIFALaEjtsXB60SDmm1_DHdt9TOSRCFHOZUSvwK0ANbZDeJH-sBZry2_0YTNi1OjPt_ZNiwr4gGC1DPTji2zdKGJos1QEyVGBzTq_oLalKkeHx3tq2tQtzghyIhYoF4_sFmej1YL1WtnFQyH0y1epowKmDFpDz_EdGKH2cYKTleuTu97viowkIIMqoDgMqTD0uBaZNGwjjsM07T)
+
+Be the first to know about:
+- 🧠 Upcoming Builders Challenges
+- 💸 New reward opportunities
+- ⚙ Product updates and feature drops
+- 🎁 Early-bird credits and partner perks
+
+Join the Nosana builder community today — and build the future of decentralized AI.
+
