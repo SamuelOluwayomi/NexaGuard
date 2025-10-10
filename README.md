@@ -4,7 +4,7 @@
 
 # Nosana and AI Builders Presents: BUIDL DAY @ TOKEN2049 🚀
 
-![Agent](./assets/NosanaBuildersChallengeAgents.jpg)
+![Agent](./assets/NosanaBuildersChallenge03.jpg)
 
 ## Welcome to the AI Agent Challenge
 
