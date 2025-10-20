@@ -149,8 +149,8 @@ Open <http://localhost:4111> to open up the Mastra Agent Playground.
 **Important Dates:**
 
 - Start Challenge: 10 October
-- Submission Deadline: 24 October
-- Winners Announced: 31 October
+- Submission Deadline: 31 October
+- Winners Announced: 07 October
 
 ### Phase 1: Development
 
