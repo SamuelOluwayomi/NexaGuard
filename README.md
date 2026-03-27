@@ -1,16 +1,19 @@
-# Nosana x ElizaOS Agent Challenge
+# NexaGuard: AI-Powered Personal Security Agent
 
-![ElizaOS](./assets/NosanaXEliza.jpg)
+![NexaGuard Logo](./assets/NexaGuard.jpg)
 
-Build your own **personal AI agent** using [ElizaOS](https://elizaos.com) and deploy it on the [Nosana](https://nosana.com) decentralized compute network. Win a share of **$3,000 USDC** in prizes.
+**NexaGuard** is your personal, decentralized AI security assistant built on [ElizaOS](https://elizaos.com) and powered by [Nosana](https://nosana.com). It monitors your digital footprint, provides real-time security alerts, and automates your personal data protection—all while running on decentralized infrastructure.
 
 ---
 
-## The Challenge
+## About NexaGuard
 
-Inspired by [OpenClaw](https://openclaw.ai/) — the self-hosted personal AI movement — this challenge is about giving AI back to the individual. Build an agent that runs on **your own infrastructure**, handles **your own tasks**, and keeps **your own data**.
+NexaGuard (formerly Agent Challenge) is designed to be the ultimate personal security companion. By leveraging the Nosana GPU network and the ElizaOS framework, NexaGuard provides:
 
-> **Theme: Personal AI Agents** — Build an AI agent that acts as a personal assistant, automate your life, or solve a real problem for yourself or your community. The use case is entirely up to you.
+- 🛡️ **Proactive Threat Monitoring** — Continuous scanning of on-chain activities and social mentions.
+- 🔐 **Privacy-First Intelligence** — Your security data stays on your infrastructure, never shared with centralized providers.
+- 🤖 **Automated Response** — Instant alerts and automated defensive actions for your digital assets.
+
 
 **Framework:** [ElizaOS](https://elizaos.com) (latest v2)
 **Compute:** [Nosana](https://nosana.com) decentralized GPU network
