@@ -3,8 +3,25 @@
 import * as THREE from "three";
 import { useRef, useMemo, useState, useEffect, Suspense } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Float, MeshDistortMaterial, PerspectiveCamera, OrbitControls, Environment } from "@react-three/drei";
+import { Float, MeshDistortMaterial, PerspectiveCamera, OrbitControls, Environment, Html, useProgress } from "@react-three/drei";
 import { EffectComposer, DepthOfField, ToneMapping } from "@react-three/postprocessing";
+
+function CustomLoader() {
+  const { progress } = useProgress();
+  return (
+    <Html center>
+      <div className="flex flex-col items-center justify-center gap-3 w-48">
+        <div className="text-[#171717]/80 font-black text-2xl tracking-widest">{progress.toFixed(0)}%</div>
+        <div className="w-full bg-[#171717]/10 h-1.5 rounded-full overflow-hidden">
+          <div 
+            className="h-full bg-[#171717] transition-all duration-300 ease-out" 
+            style={{ width: `${progress}%` }} 
+          />
+        </div>
+      </div>
+    </Html>
+  );
+}
 
 function Shard({ index, z, speed, color, size }: { index: number, z: number, speed: number, color: string, size: number }) {
   const ref = useRef<THREE.Mesh>(null);
@@ -62,7 +79,7 @@ export default function SentinelBackground() {
     setMounted(true);
   }, []);
 
-  const count = 100;
+  const count = 40;
   const depth = 60;
 
   const shardsData = useMemo(() => {
@@ -83,21 +100,21 @@ export default function SentinelBackground() {
     <div className="fixed inset-0 z-0 bg-[#b56605]">
       <Canvas 
         flat 
-        gl={{ antialias: false }} 
-        dpr={[1, 1.5]} 
+        gl={{ antialias: false, powerPreference: "high-performance", alpha: false }} 
+        dpr={[1, 1.2]} 
         camera={{ position: [0, 0, 10], fov: 20 }}
       >
         <color attach="background" args={["#b56605"]} />
         <ambientLight intensity={0.6} color="#b56605" />
         <spotLight position={[10, 20, 10]} penumbra={1} intensity={3} color="#ffffff" />
         
-        <Suspense fallback={null}>
+        <Suspense fallback={<CustomLoader />}>
           {shardsData.map((shard) => (
             <Shard key={shard.index} {...shard} />
           ))}
           <Environment preset="sunset" />
-          <EffectComposer enableNormalPass={false} multisampling={4}>
-            <DepthOfField target={[0, 0, 0]} focalLength={0.4} bokehScale={3} height={700} />
+          <EffectComposer enableNormalPass={false} multisampling={0}>
+            <DepthOfField target={[0, 0, 0]} focalLength={0.4} bokehScale={2} height={700} />
             <ToneMapping />
           </EffectComposer>
         </Suspense>
