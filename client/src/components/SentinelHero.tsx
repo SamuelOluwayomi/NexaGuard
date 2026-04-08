@@ -41,7 +41,7 @@ export default function SentinelHero() {
         transition={{ duration: 1, delay: 0.4 }}
         className="max-w-xl text-base md:text-lg text-[#171717]/60 leading-relaxed mb-10 font-medium"
       >
-        The fastest autonomous DevOps agent. NexaGuard transforms raw commits into verifiable, on-chain <span className="text-[#171717] font-bold">Proof of Work</span> using Nosana&apos;s GPU network and Solana&apos;s ZK-compression.
+        The fastest autonomous DevOps agent. NexaGuard transforms raw commits into verifiable, on-chain <span className="text-[#171717] font-bold">Proof of Work</span>{" "}using Nosana&apos;s GPU network and Solana&apos;s ZK-compression.
       </motion.div>
 
       <motion.div

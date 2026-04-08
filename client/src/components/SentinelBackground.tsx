@@ -40,10 +40,11 @@ function Shard({ index, z, speed, color, size }: { index: number, z: number, spe
     if (ref.current && dt < 0.1) {
       // Endless vertical loop
       ref.current.position.set(data.x * width, (data.y += dt * speed), -z);
-      // Continuous rotation
+      // Continuous rotation using standard R3F clock getter to avoid deprecation warnings
+      const time = state.clock.getElapsedTime();
       ref.current.rotation.set(
         (data.rX += dt / data.spin),
-        Math.sin(index * 1000 + state.clock.elapsedTime / 10) * Math.PI,
+        Math.sin(index * 1000 + time / 10) * Math.PI,
         (data.rZ += dt / data.spin)
       );
       // Reset position when it leaves the top of the viewport
